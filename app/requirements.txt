@@ -1,3 +1,4 @@
 streamlit
 google-generativeai
 pandas
+nba_api
