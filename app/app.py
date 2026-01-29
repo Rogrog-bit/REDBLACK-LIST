@@ -45,9 +45,9 @@ def get_nba_daily_stats():
     try:
         # 从 NBA 官方 API 拉取数据
         logs = playergamelogs.PlayerGameLogs(
-            date_from_nullable=yesterday,
-            date_to_nullable=yesterday,
-            season_nullable='2024-25' # 注意：如果新赛季开始需修改年份
+            date_from_nullable=today,
+            date_to_nullable=today,
+            season_nullable='2025-26' # 注意：如果新赛季开始需修改年份
         )
         df = logs.get_data_frames()[0]
         
